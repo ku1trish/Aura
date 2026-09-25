@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Aura</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/event.css">
+</head>
+<body>
+
+  <header class="event-header">
+    <a href="index.html" class="logo-mark" aria-label="Aura">
+      <img src="assets/Aura.svg" alt="Aura">
+    </a>
+
+    <ul class="header-icons">
+    <li>
+  <a href="profile.html" aria-label="Profile">
+    <i class="fa-regular fa-user"></i>
+  </a>
+</li>
+      <li>
+        <a href="#" aria-label="Favorite events">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="Questions">
+          <i class="fa-solid fa-question"></i>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <main class="event-page">
+
+    <div class="event-poster">
+      <img src="assets/fallinginreverce.jpg" alt="Falling In Reverse">
+    </div>
+
+    <h1 class="event-name">Falling In Reverse</h1>
+
+    <div class="event-date-row">
+      <span class="event-date">06.07.2027</span>
+      <button class="like-btn" id="likeBtn" aria-label="Like" aria-pressed="false">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+    </div>
+
+    <button class="attend-btn" id="attendBtn" aria-pressed="false">Attend</button>
+
+    <section class="liked-by">
+      <h2 class="liked-by__title">Liked by:</h2>
+      <div class="liked-by__list">
+        <div class="liked-by__item">
+          <div class="avatar"><img src="assets/dzhinniDOG.jpg" alt="Dzhinni"></div>
+          <span class="avatar-name">Dzhinni</span>
+        </div>
+        <div class="liked-by__item">
+          <div class="avatar"><img src="assets/martaDOG.jpg" alt="Marta"></div>
+          <span class="avatar-name">Marta</span>
+        </div>
+        <div class="liked-by__item">
+          <div class="avatar"><img src="assets/monaDOG.jpg" alt="Mona"></div>
+          <span class="avatar-name">Mona</span>
+        </div>
+        <div class="liked-by__item">
+          <div class="avatar"><img src="assets/zhuzhaDOG.jpg" alt="Zhuzha"></div>
+          <span class="avatar-name">Zhuzha</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/event.js"></script>
+</body>
+</html>

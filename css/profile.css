@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17.6px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #4a3a3a 0%,
+    #6b5550 25%,
+    #b89ac9 55%,
+    #e8d4f7 100%
+  );
+  background-attachment: fixed;
+  color: #fff;
+  padding: 0 0 1.6rem;
+}
+
+/* ---------- Шапка ---------- */
+.profile-header {
+  padding: 0.9rem 0.9rem 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-mark {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.logo-mark img {
+  height: 2rem;
+  width: auto;
+  display: block;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.header-icons a {
+  color: #cfc6e8;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.header-icons a:hover {
+  color: #fff;
+}
+
+/* ---------- Основной контент ---------- */
+.profile-page {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.35rem 1rem 0;
+}
+
+.profile-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #e3d2f5;
+  text-align: center;
+  margin-bottom: 1.15rem;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.profile-card__avatar {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.35);
+  flex: 0 0 auto;
+}
+
+.profile-card__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-card__info {
+  text-align: left;
+}
+
+.profile-name {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.1rem;
+}
+
+.profile-username {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #e3d2f5;
+}
+
+/* ---------- Favorite conserts ---------- */
+.favorite-conserts {
+  width: 100%;
+}
+
+.favorite-conserts__title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 0.8rem;
+}
+
+.favorite-conserts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.consert-card {
+  display: block;
+}
+
+.consert-card__image {
+  width: 100%;
+  aspect-ratio: 16 / 5;
+  border-radius: 0.45rem;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.35);
+}
+
+.consert-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.consert-card__image img.consert-card__image--lazzy {
+  object-position: center 30%;
+}
+
+.consert-card__image img.consert-card__image--ksd {
+  object-position: center 35%;
+}
+
+.consert-card__meta {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  margin-top: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.consert-card__name {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.consert-card__date {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #111;
+  opacity: 0.85;
+}
+
+.consert-card__date::before {
+  content: "|";
+  margin-right: 0.45rem;
+  opacity: 0.6;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem 0.6rem;
+  color: #4a2a63;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* ---------- Планшет / десктоп ---------- */
+@media (min-width: 768px) {
+
+  body {
+    padding: 0 0 2.5rem;
+  }
+
+  .profile-header {
+    padding: 1rem 1.15rem 0.35rem;
+  }
+
+  .logo-mark img {
+    height: 2.5rem;
+  }
+
+  .header-icons {
+    gap: 1rem;
+  }
+
+  .header-icons a {
+    font-size: 1.375rem;
+  }
+
+  .profile-page {
+    max-width: 51rem;
+    padding: 1.15rem 1.7rem 0;
+  }
+
+  .profile-title {
+    display: none;
+  }
+
+  .profile-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.4rem;
+    margin-bottom: 2.5rem;
+    padding-left: 0.25rem;
+  }
+
+  .profile-card__avatar {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .profile-card__info {
+    text-align: left;
+  }
+
+  .profile-name {
+    font-size: 1.7rem;
+  }
+
+  .profile-username {
+    font-size: 1.5rem;
+  }
+
+  .favorite-conserts__title {
+    font-size: 1.45rem;
+  }
+
+  .consert-card__image {
+    aspect-ratio: 16 / 5;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .logo-mark img {
+    height: 1.9rem;
+  }
+
+  .header-icons a {
+    font-size: 1.15rem;
+  }
+
+  .profile-title {
+    font-size: 1.25rem;
+  }
+
+  .profile-card {
+    gap: 0.7rem;
+  }
+
+  .profile-card__avatar {
+    width: 5.4rem;
+    height: 5.4rem;
+  }
+
+  .profile-name {
+    font-size: 1.2rem;
+  }
+
+  .profile-username {
+    font-size: 1.1rem;
+  }
+
+  .favorite-conserts__title {
+    font-size: 1.05rem;
+  }
+
+  .consert-card__name {
+    font-size: 0.8rem;
+  }
+
+  .consert-card__date {
+    font-size: 0.75rem;
+  }
+}
